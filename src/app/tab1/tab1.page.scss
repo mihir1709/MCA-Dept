@@ -1,0 +1,122 @@
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container:hover .text-overlay {
+  opacity: 1;
+}
+
+.text-overlay p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+}
+h2 {
+  color: rgb(213, 139, 217);
+  stroke: aqua 2px;
+  font-family: monospace;
+  font-style: italic;
+  text-decoration: underline;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  margin: 15px;
+}
+img{
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+h1{
+  color: rgb(213, 139, 217);
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: solid underline;
+  
+
+}
+
+.photo-gallery {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.photo-slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#slide1:checked ~ .slide:nth-child(1),
+#slide2:checked ~ .slide:nth-child(2),
+#slide3:checked ~ .slide:nth-child(3),
+#slide4:checked ~ .slide:nth-child(4),
+#slide5:checked ~ .slide:nth-child(5) {
+  opacity: 1;
+}
+
+.navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 50px;
+  transform: translateY(-50%);
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 0;
+  font-size: 40px;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 0.5;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}

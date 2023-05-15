@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: rgb(213, 139, 217);
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  form {
+    margin: 20px;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid rgb(213, 139, 217);
+    border-radius: 9px;
+  }
+  
+  label {
+    color: rgb(213, 139, 217);
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    color: rgb(213, 139, 217);
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  .rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .rating input[type="radio"] {
+    display: none;
+  }
+  
+  .rating label {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .rating input[type="radio"]:checked + label {
+    color: #f90;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  input[type="submit"] {
+    background-color:rgb(213, 139, 217);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #f70;
+  }
+  h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: solid underline;
+    
+  
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(79, 0, 83);
+    background-color: rgba(119, 231, 213, 0.751);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  

@@ -1,0 +1,72 @@
+<ion-content [fullscreen]="true">
+  <h1></h1>
+  <br>
+  <h1>Feedback Form</h1>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="Rollno">UCID:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="year">Year of Study:</label>
+    <select id="year" name="year">
+      <option value="first">First Year</option>
+      <option value="second">Second Year</option>
+      <option value="third">Third Year</option>
+    </select>
+
+    <label for="rating-teaching">Teaching:</label>
+    <div class="rating">
+      <input type="radio" id="rating-teaching-5" name="rating-teaching" value="5">
+      <label for="rating-teaching-5">&#9733;</label>
+      <input type="radio" id="rating-teaching-4" name="rating-teaching" value="4">
+      <label for="rating-teaching-4">&#9733;</label>
+      <input type="radio" id="rating-teaching-3" name="rating-teaching" value="3">
+      <label for="rating-teaching-3">&#9733;</label>
+      <input type="radio" id="rating-teaching-2" name="rating-teaching" value="2">
+      <label for="rating-teaching-2">&#9733;</label>
+      <input type="radio" id="rating-teaching-1" name="rating-teaching" value="1">
+      <label for="rating-teaching-1">&#9733;</label>
+    </div>
+
+    <label for="rating-facilities">Facilities:</label>
+    <div class="rating">
+      <input type="radio" id="rating-facilities-5" name="rating-facilities" value="5">
+      <label for="rating-facilities-5">&#9733;</label>
+      <input type="radio" id="rating-facilities-4" name="rating-facilities" value="4">
+      <label for="rating-facilities-4">&#9733;</label>
+      <input type="radio" id="rating-facilities-3" name="rating-facilities" value="3">
+      <label for="rating-facilities-3">&#9733;</label>
+      <input type="radio" id="rating-facilities-2" name="rating-facilities" value="2">
+      <label for="rating-facilities-2">&#9733;</label>
+      <input type="radio" id="rating-facilities-1" name="rating-facilities" value="1">
+      <label for="rating-facilities-1">&#9733;</label>
+    </div>
+
+    <label for="rating-support">Support:</label>
+    <div class="rating">
+      <input type="radio" id="rating-support-5" name="rating-support" value="5">
+      <label for="rating-support-5">&#9733;</label>
+      -  <input type="radio" id="rating-support-4" name="rating-support" value="4">
+      <label for="rating-support-4">&#9733;</label>
+      <input type="radio" id="rating-support-3" name="rating-support" value="3">
+      <label for="rating-support-3">&#9733;</label>
+      <input type="radio" id="rating-support-2" name="rating-support" value="2">
+      <label for="rating-support-2">&#9733;</label>
+      <input type="radio" id="rating-support-1" name="rating-support" value="1">
+      <label for="rating-support-1">&#9733;</label>
+    </div>
+
+    <label for="feedback">Feedback:</label>
+    <textarea id="feedback" name="feedback"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+
+
+</ion-content>
